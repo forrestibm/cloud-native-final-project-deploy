@@ -1,0 +1,11 @@
+apiVersion: tekton.dev/v1alpha1
+kind: Task
+metadata:
+  name: git-pull
+spec:
+  inputs:
+    params:
+      - name: PULL_IMAGE
+        default: docker.io/forrestibm/forrestibm/cloud-native-final-project
+  steps:
+    - name:
